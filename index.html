@@ -1,8 +1,121 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <title>Corrupt Minecraft Mod</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agent_n86</title>
+    <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Consolas", sans-serif;
+    }
+    
+    em {
+      animation-name:blink;
+      width:280px;
+      animation-duration:2s;
+      animation-timing-function: steps(1, end);
+      animation-iteration-count:Infinite;
+    }
+    
+    @keyframes blink{
+      0%{color:white;}
+      60%{color:black;}
+      100%{color:white;}
+    }
+    
+    h1 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%;
+    }
+    
+    h3 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 55%;
+      width: 100%;
+      font-size: 1em;
+      font-weight: normal;
+    }
+    
+    h4 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 80%;
+      width: 100%;
+      font-size: 1em;
+      font-weight: normal;
+    }
+    
+    a {
+      color: white;
+      text-decoration: underline;
+    }
+    
+    a:hover {
+      text-decoration: none;
+    }
+    
+    </style>
+    <meta name="title" content=">> agent_n86">
+    <meta name="description" content="Unknown command: goto agent_n86">
   </head>
   <body>
-    
+    <div>
+      <h1>agent_n86<em>|</em></h1>
+      <h3><a href="./projects.html">Projects</a> - <a href="https://linktr.ee/agentn86" target="_blank">Socials</a> - <a href="/blog">Blog</a> - <a href="/writing">Writing</a> - <a href="/agentsfiles"><b>Agent's Files</b></a></h3>
+      <h4 id="dow">the script must of failed or something. pretend something is here...</h4>
+    </div>
+    <audio loop autoplay>
+      <source type="audio/mp3" src="https://drive.google.com/uc?export=download&id=1oOfQoBIvYLzssM4O0fBEhBRkBeely4yM">
+    </audio>
+    <script>
+      let now = new Date()
+      dayofweek = now.getDay()
+      dow = document.getElementById('dow')
+      message = "i have no idea what day it is"
+      switch (dayofweek) {
+        case 0:
+          // on sunday:
+          message = "enjoy your final rest."
+          break
+        case 1:
+          // on monday:
+          message = "it's monday, the day where everyone suffers."
+          break
+        case 2:
+          // on tuesday:
+          message = "at least you got through the struggle of monday."
+          break
+        case 3:
+          // on wednesday:
+          message = "half way through, you can make it."
+          break
+        case 4:
+          // on thursday:
+          message = "thursday doesn't even start."
+          break
+        case 5:
+          // on friday:
+          message = "celebrate. or dont."
+          break
+        case 6:
+          // on saturday:
+          message = "another rest day."
+      }
+      dow.innerHTML = message
+  </script>
   </body>
 </html>
