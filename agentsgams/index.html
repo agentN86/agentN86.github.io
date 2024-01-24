@@ -7,8 +7,8 @@
     <style>img {border: 3px solid #ffffff; } .title {font-weight: bold; font-size: 18px;} body { color: white; background-color: black; font-family: "Consolas", sans-serif;} footer {bottom: 1%; left: 25%; position: fixed; font-size: small;}</style>
     <script>
         document.body.addEventListener("keydown", function (event) {
-        if (event.keyCode == 81) {
-                window.location.href = "https://google.com"
+            if (event.key === "Escape") {
+                window.location.replace("https://google.com");
             }
         });
     </script>
