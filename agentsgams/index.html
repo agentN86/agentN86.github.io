@@ -15,7 +15,7 @@
         <br><br>
         <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or view all gams here below? You can hit ESC to be redirected to Google.</b></i></marquee>
         <br><br>
-        <div><a href="" style="font-size: larger; color: white;">All Games</a> - <a onclick="randomgam()" style="font-size: larger; color: white;">Random Game</a></div>
+        <div><a href="" style="font-size: larger; color: white;">All Games</a> - <a onclick="randomgam()" style="font-size: larger; color: white;"><u>Random Game</u></a></div>
     </center>
     <br><br><br>
     <div style="display: flex; align-items: top;">
@@ -89,7 +89,8 @@
         var list = ["https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://taco-eating-truck.glitch.me/index.html", "https://coincollecor.glitch.me/index.html"]
 
         function randomgam() {
-
+            const link = list[Math.floor(Math.random() * list.length)];
+            window.location.replace(link)
         }
     </script>
 </body>
