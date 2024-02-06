@@ -323,31 +323,17 @@
         <a href="./gams/houseofhazards/index.html">&nbsp;&nbsp;<img src="./thumbs/houseofhazards.png" alt="houseofhazards" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/houseofhazards/index.html">House of Hazards</a></span>
         <p1>&nbsp;is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!</p1>
     </div>
+    <br>
+    <div style="display: flex; align-items: top;">
+        <a name="1v1.lol"></a>
+        <a onclick="opengamwindow('1v1.lol')">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" onclick="opengamwindow('1v1.lol')">1v1.LOL</a></span>
+        <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.</p1>
+    </div>
     <center><footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment given to a user while on "agents gams".</footer></center>
     <!-- Scripts -->
-    <script>
-        // redirects user
-        document.body.addEventListener("keydown", function (event) {
-            if (event.key === "Escape") {
-                window.location.replace("https://google.com");
-            }
-        });
-    </script>
-    <script>
-        // topbar
-        var topbar = document.getElementById("topbar");
-
-        var myScrollFunc = function () {
-            var y = window.scrollY;
-            if (y >= 300) {
-                topbar.className = "topbar show"
-            } else {
-                topbar.className = "topbar hide"
-            }
-        };
-
-        window.addEventListener("scroll", myScrollFunc);
-    </script>
-    <script src="randomgam.js"></script>
+    <script src="scripts/redirect.js"></script>
+    <script src="scripts/topbar.js"></script>
+    <script src="scripts/randomgam.js"></script>
+    <script src="scripts/aboutblank.js"></script>
 </body>
 </html>
