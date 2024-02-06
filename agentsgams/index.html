@@ -345,14 +345,17 @@ function opengamwindow(game) {
         var win;
         if (win) {
             // goes back to the gam
+            console.log("User already in game, so we can't do anything")
             win.focus()
         } else {
+            console.log("Making new window!")
             // sets up the window
             win = window.open()
             win.document.body.style.margin = "0"
             win.document.body.style.height = '100vh'
 
             // sets up the iframe
+            console.log("Making iframe!")
             var iframe = win.document.createElement("iframe")
             iframe.style.border = "none"
             iframe.style.width = "100%"
@@ -360,17 +363,23 @@ function opengamwindow(game) {
             iframe.style.margin = "0"
             
             // we choose the gam here
+            console.log("Choosing gam...")
             switch(game) {
                 case "1v1.lol":
+                    console.log("Successfully chosen 1v1.lol")
                     iframe.src = gameUrls[0]
                     break
             }
 
             // we add the iframe to the window
+            console.log("Appended iframe to the window")
             win.document.body.appendChild(iframe)
+
+            console.log("Sucessfully created window and iframe.")
 
             var interval = setInterval(function() {
                 if (win.closed) {
+                    console.log("Window closed!")
                     // when we close the window, we can make another game window.
                     // without this we would be stuck trying to focus to the game window
                     clearInterval(interval)
