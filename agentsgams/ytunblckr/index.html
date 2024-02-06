@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youtube Unblckr</title>
+    <style>
+        body {
+            font-family: "Consolas", sans-serif;
+            background-color: rgb(0, 87, 109);
+            color: white;
+            margin: 0;
+        }
+
+        .something {
+            position: fixed;
+            top: 35%;
+            left: 39%;
+        }
+
+        #textarea1 {
+            width: 150px;
+            height: 30px;
+            resize: none;
+        }
+
+        .something2 {
+            position: fixed;
+            top: 95%;
+            left: 41%;
+            color:rgb(0, 73, 91)
+        }
+
+        a {
+            color: rgb(0, 63, 79);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="something">
+            <h1>Youtube Unblckr</h1>
+            <input placeholder="Type in ID here..." id="input">
+            <button onclick="watch()">Go!</button>
+            <br><br>
+            <textarea readonly id="textarea1">|| nobody here || Silent Hill fogcore playlist</textarea>
+            <p id="index" style="display: none;">0</p>
+            <br><button onclick="getId()">Get ID!</button><button onclick="randomize()">Randomize!</button>
+        </div>
+        <div class="something2">
+            <i>made by agentn86 for <a href="https://agentn86.github.io/agentsgams">agents gams</a></i>
+        </div>
+    </center>
+    <script>
+
+        var myWindow // this will come in handy later
+
+        // some template vids for people who are too bothered to keep a txt file with vids
+        var vids = [
+            {name: "|| nobody here || Silent Hill fogcore playlist", id: "FiU29CHsQpo", index: 0},
+            {name: "I Survived 24 Hours Straight In Ice", id: "SZQhgExjBvQ", index: 1},
+            {name: "Me at the zoo", id: "jNQXAC9IVRw", index: 2},
+            {name: "$1 vs $100,000 Computer", id: "H7ycu9hMr2c", index: 3},
+            {name: "Beating 5 Scam Arcade Games with Science", id: "Rsxao9ptdmI", index: 4},
+            {name: "$1 vs $1,000,000 Car!", id: "KrLj6nc516A", index: 5},
+            {name: "1 vs 1,000 Hour Minecraft Build!", id: "beKaQNN1GY4", index: 6},
+            {name: "$1 vs $250,000,000 Private Island!", id: "krsBRQbOPQ4", index: 7}
+        ]
+
+        // the whole unblcoky thing goes on here
+        function watch() {
+
+
+            if (myWindow) {
+                // if you already have a yt tab, you must close it before making another one.
+                myWindow.focus()
+            } else {
+                // Make a new window
+                myWindow = window.open("about:blank")
+                myWindow.document.title = "Youtube Video"
+
+                // set the margin to 0 so you can see the yt vid
+                myWindow.document.body.style.margin = "0"
+
+                // we make the iframe
+                var iframe = document.createElement("iframe")
+                iframe.style.width = "100%"
+                iframe.style.height = "100%"
+                // this part just adds the youtube video and allows fullscreen
+                iframe.src = "https://youtube.com/embed/" + document.getElementById("input").value + "?"
+                iframe.allowFullscreen = true
+                // removes mess that comes with iframes
+                iframe.style.border = "none"
+
+                // we then add the iframe to the window, and we are done!
+                myWindow.document.body.appendChild(iframe)
+
+                myWindow.addEventListener('beforeunload', function(e) {
+                    // once the video is closed, we can make another one again (check top)
+                    myWindow = undefined
+                }, false);
+            }
+        }
+
+        function getId() {
+            // this is for the button "Get Id!"
+            document.getElementById("input").value = vids[document.getElementById("index").innerText].id
+        }
+
+        function randomize() {
+            // randomizes from vids list
+            var video = vids[Math.floor(Math.random()*vids.length)]
+            document.getElementById("textarea1").innerText = video.name
+            document.getElementById("index").innerText = video.index
+        }
+
+        randomize()
+    </script>
+</body>
+</html>
