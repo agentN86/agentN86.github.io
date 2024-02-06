@@ -326,7 +326,6 @@
     <br>
     <div style="display: flex; align-items: top;">
         <a name="1v1.lol"></a>
-        <script src="scripts/gamwindow.js" defer></script>
         <a onclick="opengamwindow('1v1.lol')">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" onclick="opengamwindow('1v1.lol')">1v1.LOL</a></span>
         <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.</p1>
     </div>
@@ -335,5 +334,52 @@
     <script src="scripts/redirect.js"></script>
     <script src="scripts/topbar.js"></script>
     <script src="scripts/randomgam.js"></script>
+    <script>
+        var gameUrls = [
+    // 1v1.lol
+    "https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml"
+]
+
+function opengamwindow(game) {
+    return function() {
+        var win;
+        if (win) {
+            // goes back to the gam
+            win.focus()
+        } else {
+            // sets up the window
+            win = window.open()
+            win.document.body.style.margin = "0"
+            win.document.body.style.height = '100vh'
+
+            // sets up the iframe
+            var iframe = win.document.createElement("iframe")
+            iframe.style.border = "none"
+            iframe.style.width = "100%"
+            iframe.style.height = "100%"
+            iframe.style.margin = "0"
+            
+            // we choose the gam here
+            switch(game) {
+                case "1v1.lol":
+                    iframe.src = gameUrls[0]
+                    break
+            }
+
+            // we add the iframe to the window
+            win.document.body.appendChild(iframe)
+
+            var interval = setInterval(function() {
+                if (win.closed) {
+                    // when we close the window, we can make another game window.
+                    // without this we would be stuck trying to focus to the game window
+                    clearInterval(interval)
+                    win = undefined
+                }
+            }, 500)
+        }
+    }
+}
+    </script>
 </body>
 </html>
