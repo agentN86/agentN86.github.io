@@ -326,7 +326,7 @@
     <br>
     <div style="display: flex; align-items: top;">
         <a name="1v1.lol"></a>
-        <a onclick="opengamwindow('1v1.lol')">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" onclick="opengamwindow('1v1.lol')">1v1.LOL</a></span>
+        <a class="gamwindow">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" class="gamwindow">1.LOL</a></span>
         <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.</p1>
     </div>
     <center><footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment given to a user while on "agents gams".</footer></center>
@@ -340,7 +340,7 @@
     "https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml"
 ]
 
-function opengamwindow(game) {
+function opengamewindow(gameNumber) {
     return function() {
         var win;
         if (win) {
@@ -364,12 +364,7 @@ function opengamwindow(game) {
             
             // we choose the gam here
             console.log("Choosing gam...")
-            switch(game) {
-                case "1v1.lol":
-                    console.log("Successfully chosen 1v1.lol")
-                    iframe.src = gameUrls[0]
-                    break
-            }
+            iframe.src = gameUrls[gameNumber - 1]
 
             // we add the iframe to the window
             console.log("Appended iframe to the window")
@@ -387,6 +382,10 @@ function opengamwindow(game) {
                 }
             }, 500)
         }
+
+        document.querySelectorAll(".gamwindow").forEach(function(button, index) {
+            button.onclick = opengamewindow(index + 1)
+        })
     }
 }
     </script>
