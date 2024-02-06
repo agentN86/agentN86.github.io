@@ -326,7 +326,7 @@
     <br>
     <div style="display: flex; align-items: top;">
         <a name="1v1.lol"></a>
-        <a class="gamwindow">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" class="gamwindow">1.LOL</a></span>
+        <a class="gamwindow" href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" class="gamwindow" href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml">1v1.LOL</a></span>
         <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.</p1>
     </div>
     <center><footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment given to a user while on "agents gams".</footer></center>
@@ -334,60 +334,5 @@
     <script src="scripts/redirect.js"></script>
     <script src="scripts/topbar.js"></script>
     <script src="scripts/randomgam.js"></script>
-    <script>
-        var gameUrls = [
-    // 1v1.lol
-    "https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml"
-]
-
-function opengamewindow(gameNumber) {
-    return function() {
-        var win;
-        if (win) {
-            // goes back to the gam
-            console.log("User already in game, so we can't do anything")
-            win.focus()
-        } else {
-            console.log("Making new window!")
-            // sets up the window
-            win = window.open()
-            win.document.body.style.margin = "0"
-            win.document.body.style.height = '100vh'
-
-            // sets up the iframe
-            console.log("Making iframe!")
-            var iframe = win.document.createElement("iframe")
-            iframe.style.border = "none"
-            iframe.style.width = "100%"
-            iframe.style.height = "100%"
-            iframe.style.margin = "0"
-            
-            // we choose the gam here
-            console.log("Choosing gam...")
-            iframe.src = gameUrls[gameNumber - 1]
-
-            // we add the iframe to the window
-            console.log("Appended iframe to the window")
-            win.document.body.appendChild(iframe)
-
-            console.log("Sucessfully created window and iframe.")
-
-            var interval = setInterval(function() {
-                if (win.closed) {
-                    console.log("Window closed!")
-                    // when we close the window, we can make another game window.
-                    // without this we would be stuck trying to focus to the game window
-                    clearInterval(interval)
-                    win = undefined
-                }
-            }, 500)
-        }
-
-        document.querySelectorAll(".gamwindow").forEach(function(button, index) {
-            button.onclick = opengamewindow(index + 1)
-        })
-    }
-}
-    </script>
 </body>
 </html>
