@@ -14,12 +14,12 @@
 
         .something {
             position: fixed;
-            top: 35%;
-            left: 39%;
+            top: 33%;
+            left: 40%;
         }
 
         #textarea1 {
-            width: 150px;
+            width: 230px;
             height: 30px;
             resize: none;
         }
@@ -39,6 +39,12 @@
         a:hover {
             text-decoration: none;
         }
+
+        .history {
+            position: fixed;
+            top: 80%;
+            left: 44.5%;
+        }
     </style>
 </head>
 <body>
@@ -55,6 +61,7 @@
         <div class="something2">
             <i>made by agentn86 for <a href="https://agentn86.github.io/agentsgams">agents gams</a></i>
         </div>
+        <div class="history"><button class="history" onclick="savehistory()">Save history as CSV</button></div>
     </center>
     <script>
 
@@ -70,6 +77,10 @@
             {name: "$1 vs $1,000,000 Car!", id: "KrLj6nc516A", index: 5},
             {name: "1 vs 1,000 Hour Minecraft Build!", id: "beKaQNN1GY4", index: 6},
             {name: "$1 vs $250,000,000 Private Island!", id: "krsBRQbOPQ4", index: 7}
+        ]
+
+        const history = [
+             ["Video Name", "ID"]
         ]
 
         // the whole unblcoky thing goes on here
@@ -100,6 +111,14 @@
                 // we then add the iframe to the window, and we are done!
                 myWindow.document.body.appendChild(iframe)
 
+                // here, we add the video to the history list
+
+                iframe.addEventListener("load", function() {
+                    var title = iframe.contentWindow.document.getElementsByClassName("ytp-title-link")[0].innerText
+                    var id = document.getElementById("input").value
+                    history.push({title, id})
+                });
+
                 myWindow.addEventListener('beforeunload', function(e) {
                     // once the video is closed, we can make another one again (check top)
                     myWindow = undefined
@@ -117,6 +136,26 @@
             var video = vids[Math.floor(Math.random()*vids.length)]
             document.getElementById("textarea1").innerText = video.name
             document.getElementById("index").innerText = video.index
+        }
+
+        function savehistory() {
+            let csvContent = "data:text/csv;charset=utf-8,"
+
+            history.forEach(function(rowArray) {
+                let row = rowArray.join(",")
+                csvContent += row + "\r\n"
+            })
+
+            var encodedUri = encodeURI(csvContent)
+            var link = document.createElement("a")
+            link.setAttribute("href", encodedUri)
+            link.style.display = "none"
+            link.setAttribute("download", "ytunblckr_history.csv")
+            document.body.appendChild(link)
+               
+            link.click()
+
+            link.remove()
         }
 
         randomize()
