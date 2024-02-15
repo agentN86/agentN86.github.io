@@ -3,68 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicon.png">
     <title>Youtube Unblckr</title>
     <style>
         body {
-            font-family: "Consolas", sans-serif;
-            background-color: rgb(0, 87, 109);
-            color: white;
-            margin: 0;
+            font-family: 'Arial', sans-serif;
+            width: 50%;
+            font-size: 16px;
         }
 
-        .something {
-            position: fixed;
-            top: 30%;
-            left: 26.5%;
+        h2 {
+            color: #003366;
         }
 
-        #textarea1 {
-            width: 230px;
-            height: 30px;
-            resize: none;
+        .greenbar {
+            background: #518428;
+            color: #fff;
+            border: 1px solid #519428;
+            padding: 5px;
+            margin-top: 3px;
+            font-size: 22px;
+            font-weight: normal;
         }
 
-        .something2 {
-            position: fixed;
-            top: 95%;
-            left: 41%;
-            color:rgb(0, 73, 91)
+        .panel {
+            background: #eee;
+            border: solid 1px #bbbbbb;
+            padding: 5px;
+        }
+
+        .inputlong {
+            border: 1px solid #044284;
+            border-radius: 2px;
+            box-shadow: 1px 1px 2px #666;
+            font-size: 16px;
+            background-color: #fff;
+        }
+
+        input[type=submit] {
+            border: 0px;
+            color: #fff;
+            padding: 11px 50px 11px 16px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: #4c7b25;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="180px" height="40px"><circle cx="85" cy="20" r="11" fill="darkseagreen" /><path d="M80 12 L80 26 L91 20 Z" fill="white" /></svg>');
+            background-repeat: no-repeat;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color: #696969;
         }
 
         a {
-            color: rgb(0, 63, 79);
-            text-decoration: underline;
+            color: black;
+            font-weight: bold;
         }
 
         a:hover {
             text-decoration: none;
         }
 
-        .history {
-            position: fixed;
-            top: 80%;
-            left: 44.5%;
+        button {
+            padding: 0;
+            margin: 0;
+            border: none;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 50px;
         }
+
+        /* GET ID BUTTON COLOR: #01db00
+           RANDOMIZE BUTTON COLOR: #a60000
+        */
     </style>
 </head>
 <body>
-    <center>
-        <div class="something">
-            <h1>Youtube Unblckr</h1>
-            <input placeholder="Type in ID here..." id="input">
-            <button onclick="watch()">Go!</button>
-            <br><br>
-            NOTE: You may need to sign out of your account to be able to access all content from YT.
-            <br><br>
-            <textarea readonly id="textarea1">|| nobody here || Silent Hill fogcore playlist</textarea>
+            <h2>agents tools - Youtube Unblckr</h2>
+            <p><a href="../../index.html"><< back to agents tools</a></p>
+            <p>The YT Unblckr allows you to watch Youtube videos without the hassle of ads or being watched. You may need to sign out to access all content for this unblckr. The plus icon (green) gets the ID from the Randomized Video section. If you want a different video, hit the retry button (red).</p>
+            <p>You cannot watch multiple YT videos, though. When you have 1 tab open, you must close it to make another YT video.</p>
+            <p><b>Note</b> that you cannot make your own YouTube videos on this Unblckr.</p>
+            <table class="panel" align="center">
+                <p1 style="color: red;" id="warning"></p1>
+                <tbody>
+                    <tr>
+                        <td align="center">Youtube ID</td>
+                        <td align="center">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td align="center"><input type="text" id="input" class="inputlong"></td>
+                        <td align="center"><input type="submit" value="Watch" onclick="watch()"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <p><b>Randomized Video: </b><p1 id="textarea1">textarea1</p1></p>
             <p id="index" style="display: none;">0</p>
-            <br><button onclick="getId()">Get ID!</button><button onclick="randomize()">Randomize!</button>
+            <button onclick="getId()"><img src="./get.png" width="30"></button>&nbsp;<button onclick="randomize()"><img src="./random.png" width="30"></button>
         </div>
-        <div class="something2">
-            <i>made by agentn86 for <a href="https://agentn86.github.io/agentsgams">agents gams</a></i>
-        </div>
-        <div class="history"><button class="history" onclick="savehistory()" disabled>Save history as CSV</button></div>
-    </center>
+        <!--<div class="history"><button class="history" onclick="savehistory()" disabled>Save history as CSV</button></div>-->
     <script>
 
         var myWindow // this will come in handy later
