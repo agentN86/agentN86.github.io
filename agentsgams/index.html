@@ -11,14 +11,23 @@
     <a name="top"></a>
     <div id="topbar" class="topbar hide"><center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center></div>
     <center>
-        <h1><a id="juan">agents</a> gams</h1>
+        <h1><a id="juan" style="color: white; :hover {color: white;}">agents</a> gams</h1>
+        <audio loop controls onplay="showGIF()" onpause="hideGIF()"><source type="audio/mp3" src="./pilotredsun.mp3"></audio>
         <script>
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
                 event.target.innerText = "juans"
                 event.target.href = "./juan/"
             })
+
+            function showGIF() {
+                document.getElementById("musicgif").style.display = "block"
+            }
+
+            function hideGIF() {
+                document.getElementById("musicgif").style.display = "none"
+            }
         </script>
-        <audio loop controls><source type="audio/mp3" src="./pilotredsun.mp3"></audio>
+        <img src="./music.gif" style="display: none;" id="musicgif">
         <br><br>
         <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or view all gams here below? You can hit ESC to be redirected to Google.</b></i></marquee>
         <br>
