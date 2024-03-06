@@ -19,24 +19,17 @@
                 event.target.href = "./juan/"
             })
 
-            function showGIF() {
-                document.getElementById("musicgif").style.display = "block"
-            }
-
-            function hideGIF() {
-                document.getElementById("musicgif").style.display = "none"
-            }
-
             function togglemusic() {
 
-                if (document.getElementById("musicgif").src = "./musicStop.png") {
+                if (document.getElementById("musicgif").src == "./musicStop.png") {
                     document.getElementById("musicgif").src = "./music.gif"
                     document.getElementById("audiothing").play()
-                } else {
+                }
+
+                if (document.getElementById("musicgif").src == "./music.gif") {
                     document.getElementById("musicgif").src = "./musicStop.png"
                     document.getElementById("audiothing").pause()
                 }
-
             }
         </script>
         <a onclick="togglemusic()" style="cursor: pointer;"><img src="./musicStop.png" style="border: 0px;" id="musicgif"></a>
