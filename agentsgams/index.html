@@ -12,7 +12,7 @@
     <div id="topbar" class="topbar hide"><center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center></div>
     <center>
         <h1><a id="juan" style="color: white; :hover {color: white;}">agents</a> gams</h1>
-        <audio loop controls onplay="showGIF()" onpause="hideGIF()"><source type="audio/mp3" src="./pilotredsun.mp3"></audio>
+        <audio loop id="audiothing"><source type="audio/mp3" src="./pilotredsun.mp3"></audio>
         <script>
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
                 event.target.innerText = "juans"
@@ -26,8 +26,20 @@
             function hideGIF() {
                 document.getElementById("musicgif").style.display = "none"
             }
+
+            function togglemusic() {
+
+                if (document.getElementById("musicgif").src = "./musicStop.png") {
+                    document.getElementById("musicgif").src = "./music.gif"
+                    document.getElementById("audiothing").play()
+                } else {
+                    document.getElementById("musicgif").src = "./musicStop.png"
+                    document.getElementById("audiothing").pause()
+                }
+
+            }
         </script>
-        <img src="./music.gif" style="display: none; border: 0px;" id="musicgif">
+        <a onclick="togglemusic()" style="cursor: pointer;"><img src="./musicStop.png" style="border: 0px;" id="musicgif"></a>
         <br><br>
         <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or view all gams here below? You can hit ESC to be redirected to Google.</b></i></marquee>
         <br><br>
