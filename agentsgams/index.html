@@ -1,18 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>agents gams</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>html {scroll-behavior: smooth;} img {border: 3px solid #ffffff; } .title {font-weight: bold; font-size: 18px;} body { color: white; background-color: black; font-family: "Consolas", sans-serif;} footer {bottom: 1%; left: 25%; position: fixed; font-size: small;} .topbar {transition: all .5s; position: fixed; left: 90%;} .hide {opacity: 0;} .show {opacity: 1;}</style>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        img {
+            border: 3px solid #ffffff;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        body {
+            color: white;
+            background-color: black;
+            font-family: "Consolas", sans-serif;
+        }
+
+        footer {
+            bottom: 1%;
+            left: 25%;
+            position: fixed;
+            font-size: small;
+        }
+
+        .topbar {
+            transition: all .5s;
+            position: fixed;
+            left: 90%;
+        }
+
+        .hide {
+            opacity: 0;
+        }
+
+        .show {
+            opacity: 1;
+        }
+    </style>
 </head>
+
 <body>
     <a name="top"></a>
-    <div id="topbar" class="topbar hide"><center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center></div>
+    <div id="topbar" class="topbar hide">
+        <center><a href="#top" style="font-size: larger; color: white;">Back to Top</a></center>
+    </div>
     <center>
         <h1><a id="juan" style="color: white; :hover {color: white;}">agents</a> gams</h1>
-        <audio loop id="audiothing"><source type="audio/mp3" src="./pilotredsun.mp3"></audio>
+        <audio loop id="audiothing">
+            <source type="audio/mp3" src="./pilotredsun.mp3">
+        </audio>
         <script>
             document.getElementById("juan").addEventListener("mouseenter", (event) => {
                 event.target.innerText = "juans"
@@ -32,436 +78,663 @@
                 }
             }
         </script>
-        <a onclick="togglemusic()" style="cursor: pointer;"><img src="./musicStop.png" style="border: 0px;" id="musicgif"></a>
+        <a onclick="togglemusic()" style="cursor: pointer;"><img src="./musicStop.png" style="border: 0px;"
+                id="musicgif"></a>
         <br><br>
-        <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or view all gams here below? You can hit ESC to be redirected to Google.</b></i></marquee>
+        <marquee scrollamount="8"><i><b>All gams from agent himself, or some other creators! Maybe try a random gam or
+                    view all gams here below? You can hit ESC to be redirected to Google.</b></i></marquee>
         <br><br>
-        <i><b><a href="https://sites.google.com/view/agentsgams-blog/changelogs/2024/v2-6" style="color: white;">v2.6.1 is successfully been released! Bug fixes and the site counter is back (can we beat our record of 200?). Clicking on this link will send you to v2.6 changelog (because of no new gams). Oh yeah, the blog website is gone due to Google being a bit silly. Sorry folks. What I might have to do is host it on HERE, not google.</a></b></i>
+        <i><b><a href="https://sites.google.com/view/agentsgams-blog/changelogs/2024/v2-6" style="color: white;">v2.6.1
+                    is successfully been released! Bug fixes and the site counter is back (can we beat our record of
+                    200?). Clicking on this link will send you to v2.6 changelog (because of no new gams). Oh yeah, the
+                    blog website is gone due to Google being a bit silly. Sorry folks. What I might have to do is host
+                    it on HERE, not google.</a></b></i>
         <br><br>
         <!--<b><a href="mylifevg.mp4" style="color: red;">!! ANNOUNCEMENT: Due to Classroom6X being *completely* broken, some gams here will not work. These gams will not work: <a style="color: lightcoral">, ,, , , Moto X3M 1-2-3, and 1v1.lol.</a><a style="color: red;">These gams also don't work on classroom6x. Please wait until I move all the gams over to agents gams servers. (It may take a few days!)</a></a></b>!-->
         <br><br>
-        <div><a href="" style="font-size: larger; color: white;">All Games</a> - <a onclick="randomgam()" style="font-size: larger; color: white; cursor: pointer;"><u>Random Game</u></a> - <a href="https://trello.com/b/YjI0x9ME" style="font-size: larger; color: white; cursor: pointer;"><u>Trello Board</u></a> - <a href="https://agentn86.123guestbook.com" style="font-size: larger; color: white; cursor: pointer;"><u>Guestbook</u></a> - <a href="https://sites.google.com/view/agentsgams-blog/home" style="font-size: larger; color: white; cursor: pointer;"><u>Blog & Changelogs</u></a> - <a href="./agentstools/index.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents tools</u></a> - <a href="yiscord.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents server (yiscord)</u></a> - <a href="./halloffame/" style="font-size: larger; color: white; cursor: pointer;"><u>Hall of Fame <b>(NEW)</b></u></a></div>
+        <div><a href="" style="font-size: larger; color: white;">All Games</a> - <a onclick="randomgam()"
+                style="font-size: larger; color: white; cursor: pointer;"><u>Random Game</u></a> - <a
+                href="https://trello.com/b/YjI0x9ME" style="font-size: larger; color: white; cursor: pointer;"><u>Trello
+                    Board</u></a> - <a href="https://agentn86.123guestbook.com"
+                style="font-size: larger; color: white; cursor: pointer;"><u>Guestbook</u></a> - <a
+                href="https://sites.google.com/view/agentsgams-blog/home"
+                style="font-size: larger; color: white; cursor: pointer;"><u>Blog & Changelogs</u></a> - <a
+                href="./agentstools/index.html" style="font-size: larger; color: white; cursor: pointer;"><u>agents
+                    tools</u></a> - <a href="yiscord.html"
+                style="font-size: larger; color: white; cursor: pointer;"><u>agents server (yiscord)</u></a> - <a
+                href="./halloffame/" style="font-size: larger; color: white; cursor: pointer;"><u>Hall of Fame
+                    <b>(NEW)</b></u></a></div>
         <br>
-        <p1><b style="color: red;">Red:</b> Not FF, <b style="color: blue;">Blue:</b> Not working, <b style="color: green;">Green:</b> Requires Download, <b style="color: pink;">Pink:</b> Made by Agent</p1>
+        <p1><b style="color: red;">Red:</b> Not FF, <b style="color: blue;">Blue:</b> Not working, <b
+                style="color: green;">Green:</b> Requires Download, <b style="color: pink;">Pink:</b> Made by Agent</p1>
         <br><br>
-        <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=6dc48f83683bbb2d2dc9d37d95844729c9aa3408'></script>
+        <script type='text/javascript'
+            src='https://www.freevisitorcounters.com/auth.php?id=6dc48f83683bbb2d2dc9d37d95844729c9aa3408'></script>
         <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1173849/t/9"></script>
         <br><br>
-        <form method="post" action="https://poll.pollcode.com/33499213"><div style="background-color:#EEEEEE;padding:2px;width:237px;font-family:Verdana;font-size:small;color:#FFFFFF;background-image: url('./black_diag.gif');"><div style="padding:2px 0px 4px 2px;"><strong>Which is the best sports related gam?</strong></div><div align="center" style="padding-bottom:5px;"><select name="answer"><option value="1">Basketball Stars</option><option value="2">Big Shot Boxing</option><option value="3">Retro Bowl</option><option value="4">1 on 1 Hockey</option></select></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote "> <input type="submit" name="view" value=" View "></div></div></form>
+        <form method="post" action="https://poll.pollcode.com/33499213">
+            <div
+                style="background-color:#EEEEEE;padding:2px;width:237px;font-family:Verdana;font-size:small;color:#FFFFFF;background-image: url('./black_diag.gif');">
+                <div style="padding:2px 0px 4px 2px;"><strong>Which is the best sports related gam?</strong></div>
+                <div align="center" style="padding-bottom:5px;"><select name="answer">
+                        <option value="1">Basketball Stars</option>
+                        <option value="2">Big Shot Boxing</option>
+                        <option value="3">Retro Bowl</option>
+                        <option value="4">1 on 1 Hockey</option>
+                    </select></div>
+                <div align="center" style="padding:3px;"><input type="submit" value=" Vote "> <input type="submit"
+                        name="view" value=" View "></div>
+            </div>
+        </form>
     </center>
     <br><br><br>
-    <div style="display: flex; align-items: top;">
-        <a name="epicbossbattle"></a>
-        <a href="https://agentn86.github.io/epicbossbattle/v1.3.3/">&nbsp;&nbsp;<img src="https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png" alt="epic boss battle" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://agentn86.github.io/epicbossbattle/v1.3.3">Epic Boss Battle</a></span>
-        <p1>&nbsp;is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="smnake"></a>
-        <a href="https://taco-eating-truck.glitch.me/index.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="smnake" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://taco-eating-truck.glitch.me/index.html">SMnake</a></span>
-        <p1>&nbsp;is a simple gam where you will forever collect meat with no objective! Passes time away... Use the controls on the top right to play.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="coincollector"></a>
-        <a href="https://coincollecor.glitch.me/index.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="coincollecter" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://coincollecor.glitch.me/index.html">Coin Collector</a></span>
-        <p1>&nbsp;is a simple gam where you will have to collect as much money as you can. Use the controls on the bottom to play.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="3dmaze"></a>
-        <a href="./gams/3dmaze.html">&nbsp;&nbsp;<img src="./thumbs/3dmaze.svg" alt="3dmaze" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/3dmaze.html">3D Maze</a></span>
-        <p1>&nbsp;is a simple maze gam where you have to find the exit! Use WASD to move and left and right arrows to look around. Try finding the green flag to win.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="alienshooter"></a>
-        <a href="./gams/alienshooter.html">&nbsp;&nbsp;<img src="./thumbs/alienshooter.png" alt="alienshooter" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/alienshooter.html">Alien Shooter</a></span>
-        <p1>&nbsp;is a simple shooter gam where the user has to shoot the alien. The more you shoot- the faster it is! Use mouse to shoot.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="bitcoin-clicker"></a>
-        <a href="https://julianyaman.github.io/bitcoin-clicker/">&nbsp;&nbsp;<img src="./comingsoon.png" alt="bitcoinclicker" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://julianyaman.github.io/bitcoin-clicker/">Bitcoin Clicker</a></span>
-        <p1>&nbsp;is a "Cookie Clicker" similar type gam- but instead it's bitcoin!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="cookie-clicker"></a>
-        <a href="https://steamcookieclicker.github.io/">&nbsp;&nbsp;<img src="./comingsoon.png" alt="cookieclicker" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://steamcookieclicker.github.io/">Cookie Clicker Unblocked</a></span>
-        <p1>&nbsp;is exactly what it sounds like. You know what it is- why not play it?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papaspizzeria"></a>
-        <a href="./gams/flash/papapizzera.html">&nbsp;&nbsp;<img src="./thumbs/papapizzeria.jpeg" alt="papaspizzeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papapizzera.html">Papa's Pizzeria</a></span>
-        <p1>&nbsp;is the original classic of the Papa gams. Own a pizza business and get the best scores!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papasburgeria"></a>
-        <a href="./gams/flash/papaburger.html">&nbsp;&nbsp;<img src="./thumbs/papaburger.jpeg" alt="papasburgeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaburger.html">Papa's Burgeria</a></span>
-        <p1>&nbsp;is one of the sequels to Papa's Pizzeria. Why not give both a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ageofwar2"></a>
-        <a href="./gams/flash/ageofwar2.html">&nbsp;&nbsp;<img src="./thumbs/ageofwar2.jpeg" alt="ageofwar2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/ageofwar2.html">Age of War 2</a></span>
-        <p1>&nbsp;is a war simulation gam where you try to win a war aganist a enemy AI!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="run2"></a>
-        <a href="./gams/flash/run2.html">&nbsp;&nbsp;<img src="./thumbs/run2.jpeg" alt="run2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/run2.html">Run 2</a></span>
-        <p1>&nbsp;is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="whackboss"></a>
-        <a href="./gams/flash/whackboss.html">&nbsp;&nbsp;<img src="./thumbs/whackyourboss.jpeg" alt="whackyourboss" width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/whackboss.html">Whack your Boss</a></span>
-        <p1>&nbsp;might not the the most family friendly gam out there- but it is sure fun to do something after a rough day.</p1></p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ducklife"></a>
-        <a href="./gams/flash/ducklife.html">&nbsp;&nbsp;<img src="./thumbs/ducklife.jpeg" alt="ducklife" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/ducklife.html">Duck Life</a></span>
-        <p1>&nbsp;is a gam where you have to train a duck to get your farm back!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ducklife"></a>
-        <a href="./gams/flash/impossiblequiz.html">&nbsp;&nbsp;<img src="./thumbs/impossiblequiz.jpeg" alt="theimpossiblequiz" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/impossiblequiz.html">The Impossible Quiz</a></span>
-        <p1>&nbsp;is a super hard gam with over 100 questions! Can you beat it?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="worldhardgame"></a>
-        <a href="./gams/flash/worldhardgame.html">&nbsp;&nbsp;<img src="./thumbs/worldhardgame.jpeg" alt="theworldshardestgame" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/worldhardgame.html">The World's Hardest Game</a></span>
-        <p1>&nbsp;is a super hard gam with a bunch of levels... can you beat it?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ducklife"></a>
-        <a href="./gams/flash/portalflash.html">&nbsp;&nbsp;<img src="./thumbs/portalflash.jpeg" alt="portaltheflashversion" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/portalflash.html">Portal: The Flash Version</a></span>
-        <p1>&nbsp;is the "2D version" of Portal.. can you get through the test chambers?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ageofwar"></a>
-        <a href="./gams/flash/ageofwar.html">&nbsp;&nbsp;<img src="./thumbs/ageofwar.jpeg" alt="ageofwar" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/ageofwar.html">Age of War</a></span>
-        <p1>&nbsp;is the original version of Age of War 2. Give it a try!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papafreezeria"></a>
-        <a href="./gams/flash/papafreezer.html">&nbsp;&nbsp;<img src="./thumbs/papafreeze.jpeg" alt="papafreezeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papafreezer.html">Papa's Freezeria</a></span>
-        <p1>&nbsp;is another sequal to the Papa franschise. This time- deserts!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papafreezeria"></a>
-        <a href="./gams/flash/papapancake.html">&nbsp;&nbsp;<img src="./thumbs/papapancake.jpeg" alt="papapancakeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papapancake.html">Papa's Pancakeria</a></span>
-        <p1>&nbsp;is another sequal to the Papa franschise. This time- pancakes!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="bloonstd5"></a>
-        <a href="./gams/flash/bloontd5.html">&nbsp;&nbsp;<img src="./thumbs/bloonstd5.jpeg" alt="bloonstd5" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/bloontd5.html">Bloons Tower Defense 5</a></span>
-        <p1>&nbsp;is a tower defense game where you have to defend your tower- the enemy being balloons!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="slope"></a>
-        <a href="./gams/slope/index.html">&nbsp;&nbsp;<img src="./thumbs/slope.jpeg" alt="slope" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/slope/index.html">SLOPE</a></span>
-        <p1>&nbsp;is a infinite "runner", so to say... but your a ball!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="basketballstars"></a>
-        <a href="./gams/basketballstars/index.html">&nbsp;&nbsp;<img src="./thumbs/basketballstars.png" alt="basketballstars" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/basketballstars/index.html">Basketball Stars</a></span>
-        <p1>&nbsp;is a co-op/singleplayer basketball gam. Be some of your favorite basketball stars!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="timeshooter3"></a>
-        <a href="./gams/timeshooter3/index.html">&nbsp;&nbsp;<img src="./thumbs/timeshooter3.png" alt="timeshooter3" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/timeshooter3/index.html">Time Shooter 3</a></span>
-        <p1>&nbsp;is a shooter gam where time moves when YOU move!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="fancypants"></a>
-        <a href="./gams/flash/fancypants.html">&nbsp;&nbsp;<img src="./thumbs/fancypantsworld1.png" alt="fancypants" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/fancypants.html">Fancy Pants Adventures</a></span>
-        <p1>&nbsp;is a cool but simple platformer- with many different levels and enemies!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="alienhom"></a>
-        <a href="./gams/flash/alienhom.html">&nbsp;&nbsp;<img src="./thumbs/alienhom.png" alt="alienhom" width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/alienhom.html">Alien Hominid</a></span>
-        <p1>&nbsp;is when you are the alien and you need to get out of earth before the FBI catches you! Not the most family-friendly, to be certain- but great gam to play after-school.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="tosstheturtle"></a>
-        <a href="./gams/flash/tosstheturtle.html">&nbsp;&nbsp;<img src="./thumbs/tosstheturtle.png" alt="tosstheturtle" width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/tosstheturtle.html">Toss the Turtle</a></span>
-        <p1>&nbsp;is not that family friendly- but is a funny little cartoon viol. gam where you toss the turtle to get points.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="bloxorz"></a>
-        <a href="./gams/flash/bloxorz.html">&nbsp;&nbsp;<img src="./thumbs/bloxorz.png" alt="bloxorz" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/bloxorz.html">Bloxorz</a></span>
-        <p1>&nbsp;is a puzzle game where you have to fit a rectangle into a square hole- and can get challenging!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="wastedsky"></a>
-        <a href="./gams/flash/wastedsky.html">&nbsp;&nbsp;<img src="./thumbs/wastedsky.png" alt="wastedsky" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/wastedsky.html">Wasted Sky</a></span>
-        <p1>&nbsp;is a point and click game where you need to need to destroy the enemy ships!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="impossiblequiz2"></a>
-        <a href="./gams/flash/impossiblequiz2.html">&nbsp;&nbsp;<img src="./thumbs/impossiblequiz2.png" alt="impossiblequiz2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/impossiblequiz2.html">The Impossible Quiz 2</a></span>
-        <p1>&nbsp;is the sequal to The Impossible Quiz- even more impossible that can be!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="whackcomputer"></a>
-        <a href="./gams/flash/whackcomputer.html">&nbsp;&nbsp;<img src="./thumbs/whackcomputer.png" alt="whackcomputer" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/whackcomputer.html">Whack your Computer</a></span>
-        <p1>&nbsp;helps you answer the question- can you feel better after whacking your computer? Find out...</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papacheese"></a>
-        <a href="./gams/flash/papaCheese.html">&nbsp;&nbsp;<img src="./thumbs/papacheeseria.png" alt="papacheese" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaCheese.html">Papa's Cheeseria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papacheese"></a>
-        <a href="./gams/flash/papaCupcake.html">&nbsp;&nbsp;<img src="./thumbs/papacupcakeria.png" alt="papacupcake" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaCupcake.html">Papa's Cupcakeria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papadonut"></a>
-        <a href="./gams/flash/papaDonut.html">&nbsp;&nbsp;<img src="./thumbs/papadonuteria.png" alt="papadonut" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaDonut.html">Papa's Donuteria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papahotdog"></a>
-        <a href="./gams/flash/papaHotDog.html">&nbsp;&nbsp;<img src="./thumbs/papahotdogeria.png" alt="papahotdog" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaHotDog.html">Papa's Hotdogeria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papapasteria"></a>
-        <a href="./gams/flash/papaPastaria.html">&nbsp;&nbsp;<img src="./thumbs/papapasteria.png" alt="papapasteria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaPastaria.html">Papa's Pastaria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papascooperia"></a>
-        <a href="./gams/flash/papaScooperia.html">&nbsp;&nbsp;<img src="./thumbs/papascooperia.png" alt="papascooperia" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaScooperia.html">Papa's Scooperia</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papasushi"></a>
-        <a href="./gams/flash/papaSushiria.html">&nbsp;&nbsp;<img src="./thumbs/papasusheria.png" alt="papasushi" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaSushiria.html">Papa's Sushiria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papastacomia"></a>
-        <a href="./gams/flash/papaTacoMia.html">&nbsp;&nbsp;<img src="./thumbs/papatacomia.png" alt="papatacomia" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaTacoMia.html">Papa's Taco Mia</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="papawing"></a>
-        <a href="./gams/flash/papaWingeria.html">&nbsp;&nbsp;<img src="./thumbs/papawingeria.png" alt="papawing" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/papaWingeria.html">Papa's Wingeria</a></span>
-        <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="deepsleep"></a>
-        <a href="./gams/flash/deepsleep.html">&nbsp;&nbsp;<img src="./thumbs/deepsleep.png" alt="deepsleep" width="100" style="border: 3px solid blue;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/deepsleep.html">Deep Sleep</a></span>
-        <p1>&nbsp;is a point and click adventure. Can you servive the nightmare?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="deepersleep"></a>
-        <a href="./gams/flash/deepersleep.html">&nbsp;&nbsp;<img src="./thumbs/deepersleep.png" alt="deepersleep" width="100" style="border: 3px solid blue;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/deepersleep.html">Deeper Sleep</a></span>
-        <p1>&nbsp;is the sequel to the point and click adventure, Deep Sleep. Can you servive the nightmare again?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="sm63"></a>
-        <a href="./gams/flash/sm63.html">&nbsp;&nbsp;<img src="./thumbs/sm63.png" alt="sm63" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/sm63.html">SM63</a></span>
-        <p1>&nbsp;is a mashup of a bunch of Mario gams turned into one original game. Might not be the most copyright friendly- but its a great "mario" clone, so to say.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="insaneorb"></a>
-        <a href="./gams/flash/insaneorb.html">&nbsp;&nbsp;<img src="./thumbs/insaneorb.jpeg" alt="insaneorb" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/insaneorb.html">Insane Orb</a></span>
-        <p1>&nbsp;is a pong inspired gam, but with a few minor tweaks and abilites!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="interactivebuddy"></a>
-        <a href="./gams/flash/interactivebuddy.html">&nbsp;&nbsp;<img src="./thumbs/interactivebuddy.png" alt="interactivebuddy" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/interactivebuddy.html">Interactive Buddy</a></span>
-        <p1>&nbsp;allows you to have your own little best friend. You can have fun with him- or cause pain!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="interactivebuddy2"></a>
-        <a href="./gams/flash/interactivebuddy2.html">&nbsp;&nbsp;<img src="./thumbs/interactivebuddy2.png" alt="interactivebuddy2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/interactivebuddy2.html">Interactive Buddy 2</a></span>
-        <p1>&nbsp;is the sequel to Interactive Buddy, which allows you to have your own little best friend. You can have fun with him- or cause pain!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="fireboywatergirl"></a>
-        <a href="./gams/flash/fireboywatergirl.html">&nbsp;&nbsp;<img src="./thumbs/fireboywatergirl.jpeg" alt="fireboywatergirl" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/fireboywatergirl.html">Fireboy & Watergirl in The Forest Temple</a></span>
-        <p1>&nbsp;is a co-op game where the 2 people must escape a temple. Don't let water touch fire and fire touch water- it may not end well!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="pizzatron3000"></a>
-        <a href="./gams/flash/pizzatron3000.html">&nbsp;&nbsp;<img src="./thumbs/pizzatron3000.png" alt="pizzatron3000" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/pizzatron3000.html">Pizzatron 3000</a></span>
-        <p1>&nbsp;is one of the Club Pengiun minigames where you need to make pizza for customers! Thankfully, the Pizzatron can easily do everything for you.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="eaglercraft"></a>
-        <a href="https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R" download>&nbsp;&nbsp;<img src="./thumbs/eaglercraft.png" alt="eaglecraft" width="100" style="border: 3px solid green;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R" download>Eaglercraft</a></span>
-        <p1>&nbsp;is a Minecraft clone based for the web! You can play with friends as well! Here is the <a href="https://docs.google.com/document/d/1UULCm0zhU0z_GRKXU8DoaGy9T7u-zqtuDYGevcVKkb8/edit?usp=sharing" style="color: white; font-weight: bold;">multiplayer server list</a> if you want it.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ssf2"></a>
-        <a href="./gams/flash/ssf2.html">&nbsp;&nbsp;<img src="./thumbs/ssf2.png" alt="ssf2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/ssf2.html">SSF2</a></span>
-        <p1>&nbsp;is a classic flash gam. You should really give it a try!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="ssf2"></a>
-        <a href="./gams/houseofhazards/index.html">&nbsp;&nbsp;<img src="./thumbs/houseofhazards.png" alt="houseofhazards" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/houseofhazards/index.html">House of Hazards</a></span>
-        <p1>&nbsp;is a platformer gam that you need to get out of the house. But other players can sabotage you on the way!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="1v1.lol"></a>
-        <a class="gamwindow" href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" class="gamwindow" href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig">1v1.LOL</a></span>
-        <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many different gamemodes- as well.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="geodash"></a>
-        <a href="./gams/geodash/index.html">&nbsp;&nbsp;<img src="./thumbs/geodash.png" alt="geodash" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/geodash/index.html">GeoDash</a></span>
-        <p1>&nbsp;is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging levels!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="motox3m"></a>
-        <a href="./gams/iframe/motox3m">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/iframe/motox3m.html">Moto X3M</a></span>
-        <p1>&nbsp;is a motorcycle game where you have to get around obstables and make it to the end.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="motox3m2"></a>
-        <a href="./gams/iframe/motox3m2">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m2" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/iframe/motox3m2.html">Moto X3M 2</a></span>
-        <p1>&nbsp;is the sequal to Moto X3M, with the same premise.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="motox3m2"></a>
-        <a href="./gams/iframe/motox3m3">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m3" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/iframe/motox3m3.html">Moto X3M 3</a></span>
-        <p1>&nbsp;is the sequal to Moto X3M, with the same premise.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="bigshotboxing"></a>
-        <a href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/bigshotboxing.png" alt="bigshotboxing" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig">Big Shot Boxing</a></span>
-        <p1>&nbsp;is a fighting sim where you must be the top in boxing.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="sr3d2"></a>
-        <a href="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/snowrider3d.png" alt="sr3d2" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig">Snow Rider 3D 2</a></span>
-        <p1>&nbsp;is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="s2p"></a>
-        <a href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/slope-2-player-logo.jpg" alt="sr3d2" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig">Slope 2 Players</a></span>
-        <p1>&nbsp;is a infinite runner by SLOPE, but its for 2 players isntead of 1.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="soccerlegends"></a>
-        <a href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/footballlegends.png" alt="sr3d2" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig">Football Legends</a></span>
-        <p1>&nbsp;is another type of Basketball Legends, but soccer!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="hellokittyadventure"></a>
-        <a href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig">&nbsp;&nbsp;<img src="./thumbs/hellokittyadventure.png" alt="hellokittyadventure" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig">Hello Kitty Adventure</a></span>
-        <p1>&nbsp;allows you to inbark in a new adventure in the Hello Kitty universe.</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="retrobowl"></a>
-        <a href="./gams/retrobowl/index.html">&nbsp;&nbsp;<img src="./thumbs/retrobowl.avif" alt="retrobowl" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/retrobowl/index.html">Retro Bowl</a></span>
-        <p1>&nbsp;allows players to enbark on a football journey!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="flappyplane"></a>
-        <a href="./gams/flappyplane/index.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="flappyplane" width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/flappyplane/index.html">Flappy Plane</a></span>
-        <p1>&nbsp;is a clone of Flappy Bird but with a interesting twist...</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="gunmayhem2"></a>
-        <a href="./gams/flash/gunmayhem2.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="gunmayhem2" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/flash/gunmayhem2.html">Gun Mayhem 2</a></span>
-        <p1>&nbsp;is a ultimate battle game! Fire and shoot until you can't no more!</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="minesweeper"></a>
-        <a href="https://agentn86.github.io/js-minesweeper">&nbsp;&nbsp;<img src="./comingsoon.png" alt="minesweeper" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://agentn86.github.io/js-minesweeper">Minesweeper</a></span>
-        <p1>&nbsp;<i>im too bothered to write a description right now- its minesweeper, its all you need to know</i></p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="minesweeper"></a>
-        <a href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig">&nbsp;&nbsp;<img src="./comingsoon.png" alt="minesweeper" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig">PolyTrack</a></span>
-        <p1>&nbsp;<i>im too bothered to write a description right now- its polytrack, its all you need to know</i></p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="nowgg"></a>
-        <a href="https://agents-nowgg.glitch.me">&nbsp;&nbsp;<img src="./comingsoon.png" alt="nowgg" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="https://agents-nowgg.glitch.me">now.gg unblckr</a></span>
-        <p1>&nbsp;<i>soon going to be transfered to agents tools, so use it here on agents gams while you can</i></p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="driftboss"></a>
-        <a href="./gams/driftboss">&nbsp;&nbsp;<img src="./thumbs/driftboss.png" alt="driftboss" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/driftboss">Drift Boss</a></span>
-        <p1>&nbsp;How long can you last driving your car on a wacky road?</p1>
-    </div>
-    <br>
-    <div style="display: flex; align-items: top;">
-        <a name="eggycar"></a>
-        <a href="./gams/eggycar">&nbsp;&nbsp;<img src="./thumbs/eggycar.png" alt="eggycar" width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;" href="./gams/eggycar">Eggy Car</a></span>
-        <p1>&nbsp;Keep your egg in your car without dropping!</p1>
-    </div>
-    <center><footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment given to a user while on "agents gams".</footer></center>
+    <div id="gamList">
+        <!--<div style="display: flex; align-items: top;">
+            <a name="epicbossbattle"></a>
+            <a href="https://agentn86.github.io/epicbossbattle/v1.3.3/">&nbsp;&nbsp;<img
+                    src="https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png" alt="epic boss battle"
+                    width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="https://agentn86.github.io/epicbossbattle/v1.3.3">Epic Boss
+                    Battle</a></span>
+            <p1>&nbsp;is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use
+                the retry button to restart the game when needed.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="smnake"></a>
+            <a href="https://taco-eating-truck.glitch.me/index.html">&nbsp;&nbsp;<img src="./comingsoon.png"
+                    alt="smnake" width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="https://taco-eating-truck.glitch.me/index.html">SMnake</a></span>
+            <p1>&nbsp;is a simple gam where you will forever collect meat with no objective! Passes time away... Use the
+                controls on the top right to play.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="coincollector"></a>
+            <a href="https://coincollecor.glitch.me/index.html">&nbsp;&nbsp;<img src="./comingsoon.png"
+                    alt="coincollecter" width="100" style="border: 3px solid pink;"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white;" href="https://coincollecor.glitch.me/index.html">Coin
+                    Collector</a></span>
+            <p1>&nbsp;is a simple gam where you will have to collect as much money as you can. Use the controls on the
+                bottom to play.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="3dmaze"></a>
+            <a href="./gams/3dmaze.html">&nbsp;&nbsp;<img src="./thumbs/3dmaze.svg" alt="3dmaze" width="100"
+                    style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/3dmaze.html">3D Maze</a></span>
+            <p1>&nbsp;is a simple maze gam where you have to find the exit! Use WASD to move and left and right arrows
+                to look around. Try finding the green flag to win.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="alienshooter"></a>
+            <a href="./gams/alienshooter.html">&nbsp;&nbsp;<img src="./thumbs/alienshooter.png" alt="alienshooter"
+                    width="100" style="border: 3px solid pink;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="./gams/alienshooter.html">Alien Shooter</a></span>
+            <p1>&nbsp;is a simple shooter gam where the user has to shoot the alien. The more you shoot- the faster it
+                is! Use mouse to shoot.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="bitcoin-clicker"></a>
+            <a href="https://julianyaman.github.io/bitcoin-clicker/">&nbsp;&nbsp;<img src="./comingsoon.png"
+                    alt="bitcoinclicker" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="https://julianyaman.github.io/bitcoin-clicker/">Bitcoin Clicker</a></span>
+            <p1>&nbsp;is a "Cookie Clicker" similar type gam- but instead it's bitcoin!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="cookie-clicker"></a>
+            <a href="https://steamcookieclicker.github.io/">&nbsp;&nbsp;<img src="./comingsoon.png" alt="cookieclicker"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="https://steamcookieclicker.github.io/">Cookie Clicker Unblocked</a></span>
+            <p1>&nbsp;is exactly what it sounds like. You know what it is- why not play it?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papaspizzeria"></a>
+            <a href="./gams/flash/papapizzera.html">&nbsp;&nbsp;<img src="./thumbs/papapizzeria.jpeg"
+                    alt="papaspizzeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papapizzera.html">Papa's Pizzeria</a></span>
+            <p1>&nbsp;is the original classic of the Papa gams. Own a pizza business and get the best scores!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papasburgeria"></a>
+            <a href="./gams/flash/papaburger.html">&nbsp;&nbsp;<img src="./thumbs/papaburger.jpeg" alt="papasburgeria"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaburger.html">Papa's Burgeria</a></span>
+            <p1>&nbsp;is one of the sequels to Papa's Pizzeria. Why not give both a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ageofwar2"></a>
+            <a href="./gams/flash/ageofwar2.html">&nbsp;&nbsp;<img src="./thumbs/ageofwar2.jpeg" alt="ageofwar2"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/ageofwar2.html">Age of War 2</a></span>
+            <p1>&nbsp;is a war simulation gam where you try to win a war aganist a enemy AI!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="run2"></a>
+            <a href="./gams/flash/run2.html">&nbsp;&nbsp;<img src="./thumbs/run2.jpeg" alt="run2" width="100"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/run2.html">Run 2</a></span>
+            <p1>&nbsp;is excatly what is sounds like- RUN! You can jump and move around to make it to the next level.
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="whackboss"></a>
+            <a href="./gams/flash/whackboss.html">&nbsp;&nbsp;<img src="./thumbs/whackyourboss.jpeg" alt="whackyourboss"
+                    width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="./gams/flash/whackboss.html">Whack your Boss</a></span>
+            <p1>&nbsp;might not the the most family friendly gam out there- but it is sure fun to do something after a
+                rough day.</p1>
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ducklife"></a>
+            <a href="./gams/flash/ducklife.html">&nbsp;&nbsp;<img src="./thumbs/ducklife.jpeg" alt="ducklife"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/ducklife.html">Duck Life</a></span>
+            <p1>&nbsp;is a gam where you have to train a duck to get your farm back!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ducklife"></a>
+            <a href="./gams/flash/impossiblequiz.html">&nbsp;&nbsp;<img src="./thumbs/impossiblequiz.jpeg"
+                    alt="theimpossiblequiz" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/impossiblequiz.html">The Impossible Quiz</a></span>
+            <p1>&nbsp;is a super hard gam with over 100 questions! Can you beat it?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="worldhardgame"></a>
+            <a href="./gams/flash/worldhardgame.html">&nbsp;&nbsp;<img src="./thumbs/worldhardgame.jpeg"
+                    alt="theworldshardestgame" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/worldhardgame.html">The World's Hardest Game</a></span>
+            <p1>&nbsp;is a super hard gam with a bunch of levels... can you beat it?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ducklife"></a>
+            <a href="./gams/flash/portalflash.html">&nbsp;&nbsp;<img src="./thumbs/portalflash.jpeg"
+                    alt="portaltheflashversion" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/portalflash.html">Portal: The Flash Version</a></span>
+            <p1>&nbsp;is the "2D version" of Portal.. can you get through the test chambers?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ageofwar"></a>
+            <a href="./gams/flash/ageofwar.html">&nbsp;&nbsp;<img src="./thumbs/ageofwar.jpeg" alt="ageofwar"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/ageofwar.html">Age of War</a></span>
+            <p1>&nbsp;is the original version of Age of War 2. Give it a try!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papafreezeria"></a>
+            <a href="./gams/flash/papafreezer.html">&nbsp;&nbsp;<img src="./thumbs/papafreeze.jpeg" alt="papafreezeria"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papafreezer.html">Papa's Freezeria</a></span>
+            <p1>&nbsp;is another sequal to the Papa franschise. This time- deserts!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papafreezeria"></a>
+            <a href="./gams/flash/papapancake.html">&nbsp;&nbsp;<img src="./thumbs/papapancake.jpeg"
+                    alt="papapancakeria" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papapancake.html">Papa's Pancakeria</a></span>
+            <p1>&nbsp;is another sequal to the Papa franschise. This time- pancakes!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="bloonstd5"></a>
+            <a href="./gams/flash/bloontd5.html">&nbsp;&nbsp;<img src="./thumbs/bloonstd5.jpeg" alt="bloonstd5"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/bloontd5.html">Bloons Tower Defense 5</a></span>
+            <p1>&nbsp;is a tower defense game where you have to defend your tower- the enemy being balloons!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="slope"></a>
+            <a href="./gams/slope/index.html">&nbsp;&nbsp;<img src="./thumbs/slope.jpeg" alt="slope"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/slope/index.html">SLOPE</a></span>
+            <p1>&nbsp;is a infinite "runner", so to say... but your a ball!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="basketballstars"></a>
+            <a href="./gams/basketballstars/index.html">&nbsp;&nbsp;<img src="./thumbs/basketballstars.png"
+                    alt="basketballstars" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/basketballstars/index.html">Basketball Stars</a></span>
+            <p1>&nbsp;is a co-op/singleplayer basketball gam. Be some of your favorite basketball stars!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="timeshooter3"></a>
+            <a href="./gams/timeshooter3/index.html">&nbsp;&nbsp;<img src="./thumbs/timeshooter3.png" alt="timeshooter3"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/timeshooter3/index.html">Time Shooter 3</a></span>
+            <p1>&nbsp;is a shooter gam where time moves when YOU move!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="fancypants"></a>
+            <a href="./gams/flash/fancypants.html">&nbsp;&nbsp;<img src="./thumbs/fancypantsworld1.png" alt="fancypants"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/fancypants.html">Fancy Pants Adventures</a></span>
+            <p1>&nbsp;is a cool but simple platformer- with many different levels and enemies!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="alienhom"></a>
+            <a href="./gams/flash/alienhom.html">&nbsp;&nbsp;<img src="./thumbs/alienhom.png" alt="alienhom" width="100"
+                    style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/alienhom.html">Alien Hominid</a></span>
+            <p1>&nbsp;is when you are the alien and you need to get out of earth before the FBI catches you! Not the
+                most family-friendly, to be certain- but great gam to play after-school.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="tosstheturtle"></a>
+            <a href="./gams/flash/tosstheturtle.html">&nbsp;&nbsp;<img src="./thumbs/tosstheturtle.png"
+                    alt="tosstheturtle" width="100" style="border: 3px solid red;"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/tosstheturtle.html">Toss the
+                    Turtle</a></span>
+            <p1>&nbsp;is not that family friendly- but is a funny little cartoon viol. gam where you toss the turtle to
+                get points.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="bloxorz"></a>
+            <a href="./gams/flash/bloxorz.html">&nbsp;&nbsp;<img src="./thumbs/bloxorz.png" alt="bloxorz"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/bloxorz.html">Bloxorz</a></span>
+            <p1>&nbsp;is a puzzle game where you have to fit a rectangle into a square hole- and can get challenging!
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="wastedsky"></a>
+            <a href="./gams/flash/wastedsky.html">&nbsp;&nbsp;<img src="./thumbs/wastedsky.png" alt="wastedsky"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/wastedsky.html">Wasted Sky</a></span>
+            <p1>&nbsp;is a point and click game where you need to need to destroy the enemy ships!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="impossiblequiz2"></a>
+            <a href="./gams/flash/impossiblequiz2.html">&nbsp;&nbsp;<img src="./thumbs/impossiblequiz2.png"
+                    alt="impossiblequiz2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/impossiblequiz2.html">The Impossible Quiz 2</a></span>
+            <p1>&nbsp;is the sequal to The Impossible Quiz- even more impossible that can be!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="whackcomputer"></a>
+            <a href="./gams/flash/whackcomputer.html">&nbsp;&nbsp;<img src="./thumbs/whackcomputer.png"
+                    alt="whackcomputer" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/whackcomputer.html">Whack your Computer</a></span>
+            <p1>&nbsp;helps you answer the question- can you feel better after whacking your computer? Find out...</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papacheese"></a>
+            <a href="./gams/flash/papaCheese.html">&nbsp;&nbsp;<img src="./thumbs/papacheeseria.png" alt="papacheese"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaCheese.html">Papa's Cheeseria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papacheese"></a>
+            <a href="./gams/flash/papaCupcake.html">&nbsp;&nbsp;<img src="./thumbs/papacupcakeria.png" alt="papacupcake"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaCupcake.html">Papa's Cupcakeria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papadonut"></a>
+            <a href="./gams/flash/papaDonut.html">&nbsp;&nbsp;<img src="./thumbs/papadonuteria.png" alt="papadonut"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaDonut.html">Papa's Donuteria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papahotdog"></a>
+            <a href="./gams/flash/papaHotDog.html">&nbsp;&nbsp;<img src="./thumbs/papahotdogeria.png" alt="papahotdog"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaHotDog.html">Papa's Hotdogeria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papapasteria"></a>
+            <a href="./gams/flash/papaPastaria.html">&nbsp;&nbsp;<img src="./thumbs/papapasteria.png" alt="papapasteria"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaPastaria.html">Papa's Pastaria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papascooperia"></a>
+            <a href="./gams/flash/papaScooperia.html">&nbsp;&nbsp;<img src="./thumbs/papascooperia.png"
+                    alt="papascooperia" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaScooperia.html">Papa's Scooperia</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papasushi"></a>
+            <a href="./gams/flash/papaSushiria.html">&nbsp;&nbsp;<img src="./thumbs/papasusheria.png" alt="papasushi"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaSushiria.html">Papa's Sushiria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papastacomia"></a>
+            <a href="./gams/flash/papaTacoMia.html">&nbsp;&nbsp;<img src="./thumbs/papatacomia.png" alt="papatacomia"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaTacoMia.html">Papa's Taco Mia</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="papawing"></a>
+            <a href="./gams/flash/papaWingeria.html">&nbsp;&nbsp;<img src="./thumbs/papawingeria.png" alt="papawing"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/papaWingeria.html">Papa's Wingeria</a></span>
+            <p1>&nbsp;is another spinof to the Papa's gams. Why not give it a try?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="deepsleep"></a>
+            <a href="./gams/flash/deepsleep.html">&nbsp;&nbsp;<img src="./thumbs/deepsleep.png" alt="deepsleep"
+                    width="100" style="border: 3px solid blue;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="./gams/flash/deepsleep.html">Deep Sleep</a></span>
+            <p1>&nbsp;is a point and click adventure. Can you servive the nightmare?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="deepersleep"></a>
+            <a href="./gams/flash/deepersleep.html">&nbsp;&nbsp;<img src="./thumbs/deepersleep.png" alt="deepersleep"
+                    width="100" style="border: 3px solid blue;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white;" href="./gams/flash/deepersleep.html">Deeper Sleep</a></span>
+            <p1>&nbsp;is the sequel to the point and click adventure, Deep Sleep. Can you servive the nightmare again?
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="sm63"></a>
+            <a href="./gams/flash/sm63.html">&nbsp;&nbsp;<img src="./thumbs/sm63.png" alt="sm63" width="100"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/sm63.html">SM63</a></span>
+            <p1>&nbsp;is a mashup of a bunch of Mario gams turned into one original game. Might not be the most
+                copyright friendly- but its a great "mario" clone, so to say.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="insaneorb"></a>
+            <a href="./gams/flash/insaneorb.html">&nbsp;&nbsp;<img src="./thumbs/insaneorb.jpeg" alt="insaneorb"
+                    width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/insaneorb.html">Insane Orb</a></span>
+            <p1>&nbsp;is a pong inspired gam, but with a few minor tweaks and abilites!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="interactivebuddy"></a>
+            <a href="./gams/flash/interactivebuddy.html">&nbsp;&nbsp;<img src="./thumbs/interactivebuddy.png"
+                    alt="interactivebuddy" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/interactivebuddy.html">Interactive Buddy</a></span>
+            <p1>&nbsp;allows you to have your own little best friend. You can have fun with him- or cause pain!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="interactivebuddy2"></a>
+            <a href="./gams/flash/interactivebuddy2.html">&nbsp;&nbsp;<img src="./thumbs/interactivebuddy2.png"
+                    alt="interactivebuddy2" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/interactivebuddy2.html">Interactive Buddy 2</a></span>
+            <p1>&nbsp;is the sequel to Interactive Buddy, which allows you to have your own little best friend. You can
+                have fun with him- or cause pain!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="fireboywatergirl"></a>
+            <a href="./gams/flash/fireboywatergirl.html">&nbsp;&nbsp;<img src="./thumbs/fireboywatergirl.jpeg"
+                    alt="fireboywatergirl" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/fireboywatergirl.html">Fireboy & Watergirl in The Forest Temple</a></span>
+            <p1>&nbsp;is a co-op game where the 2 people must escape a temple. Don't let water touch fire and fire touch
+                water- it may not end well!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="pizzatron3000"></a>
+            <a href="./gams/flash/pizzatron3000.html">&nbsp;&nbsp;<img src="./thumbs/pizzatron3000.png"
+                    alt="pizzatron3000" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/flash/pizzatron3000.html">Pizzatron 3000</a></span>
+            <p1>&nbsp;is one of the Club Pengiun minigames where you need to make pizza for customers! Thankfully, the
+                Pizzatron can easily do everything for you.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="eaglercraft"></a>
+            <a href="https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R"
+                download>&nbsp;&nbsp;<img src="./thumbs/eaglercraft.png" alt="eaglecraft" width="100"
+                    style="border: 3px solid green;"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="https://drive.google.com/uc?export=download&id=1-MduluUms_LG7tUJyMkAPBw82O40R11R"
+                    download>Eaglercraft</a></span>
+            <p1>&nbsp;is a Minecraft clone based for the web! You can play with friends as well! Here is the <a
+                    href="https://docs.google.com/document/d/1UULCm0zhU0z_GRKXU8DoaGy9T7u-zqtuDYGevcVKkb8/edit?usp=sharing"
+                    style="color: white; font-weight: bold;">multiplayer server list</a> if you want it.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ssf2"></a>
+            <a href="./gams/flash/ssf2.html">&nbsp;&nbsp;<img src="./thumbs/ssf2.png" alt="ssf2" width="100"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white;" href="./gams/flash/ssf2.html">SSF2</a></span>
+            <p1>&nbsp;is a classic flash gam. You should really give it a try!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="ssf2"></a>
+            <a href="./gams/houseofhazards/index.html">&nbsp;&nbsp;<img src="./thumbs/houseofhazards.png"
+                    alt="houseofhazards" width="100"></a><span class="title">&nbsp;&nbsp;<a style="color: white;"
+                    href="./gams/houseofhazards/index.html">House of Hazards</a></span>
+            <p1>&nbsp;is a platformer gam that you need to get out of the house. But other players can sabotage you on
+                the way!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="1v1.lol"></a>
+            <a class="gamwindow"
+                href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/1v1lol.png" alt="1v1lol" width="100"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" class="gamwindow"
+                    href="https://book-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/WPpluginsync@main/lib/edit/up.xml&container=ig">1v1.LOL</a></span>
+            <p1>&nbsp;is a battle royale type game where you must survive with bots as enemeies. There are many
+                different gamemodes- as well.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="geodash"></a>
+            <a href="./gams/geodash/index.html">&nbsp;&nbsp;<img src="./thumbs/geodash.png" alt="geodash" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/geodash/index.html">GeoDash</a></span>
+            <p1>&nbsp;is a 1-1 replica to Geomentry Dash. Give it a try, and see if you can bet the hard challenging
+                levels!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="motox3m"></a>
+            <a href="./gams/iframe/motox3m">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/iframe/motox3m.html">Moto X3M</a></span>
+            <p1>&nbsp;is a motorcycle game where you have to get around obstables and make it to the end.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="motox3m2"></a>
+            <a href="./gams/iframe/motox3m2">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m2" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/iframe/motox3m2.html">Moto X3M 2</a></span>
+            <p1>&nbsp;is the sequal to Moto X3M, with the same premise.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="motox3m2"></a>
+            <a href="./gams/iframe/motox3m3">&nbsp;&nbsp;<img src="./thumbs/motox3m.png" alt="motox3m3" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/iframe/motox3m3.html">Moto X3M 3</a></span>
+            <p1>&nbsp;is the sequal to Moto X3M, with the same premise.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="bigshotboxing"></a>
+            <a
+                href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/bigshotboxing.png" alt="bigshotboxing" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;"
+                    href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://130291037-114506095424113735.preview.editmysite.com/uploads/b/8156145-746889060530413966/files/bsb.xml&container=ig">Big
+                    Shot Boxing</a></span>
+            <p1>&nbsp;is a fighting sim where you must be the top in boxing.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="sr3d2"></a>
+            <a
+                href="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/snowrider3d.png" alt="sr3d2" width="100" style="border: 3px solid white;"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;"
+                    href="https://google-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/mind4ur/debugactions@655d5137814242ee9383fb707b77aa394f1c1735/main/sr.xml&container=ig">Snow
+                    Rider 3D 2</a></span>
+            <p1>&nbsp;is a infinite runner, but you are on a sliegh! Very challenging, can you get all the presents?
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="s2p"></a>
+            <a
+                href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/slope-2-player-logo.jpg" alt="sr3d2" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;"
+                    href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/sk1bx/vue-tables-2@5eccbd48de60822f1a6d6d605d8c58f317d75b6f/lib/s2p.xml&container=ig">Slope
+                    2 Players</a></span>
+            <p1>&nbsp;is a infinite runner by SLOPE, but its for 2 players isntead of 1.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="soccerlegends"></a>
+            <a
+                href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/footballlegends.png" alt="sr3d2" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;"
+                    href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://728591305-836400173629471539.preview.editmysite.com/uploads/b/139890129-766134333972657537/files/fl.xml&container=ig">Football
+                    Legends</a></span>
+            <p1>&nbsp;is another type of Basketball Legends, but soccer!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="hellokittyadventure"></a>
+            <a
+                href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./thumbs/hellokittyadventure.png" alt="hellokittyadventure" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;"
+                    href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig">Hello
+                    Kitty Adventure</a></span>
+            <p1>&nbsp;allows you to inbark in a new adventure in the Hello Kitty universe.</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="retrobowl"></a>
+            <a href="./gams/retrobowl/index.html">&nbsp;&nbsp;<img src="./thumbs/retrobowl.avif" alt="retrobowl"
+                    width="100" style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/retrobowl/index.html">Retro Bowl</a></span>
+            <p1>&nbsp;allows players to enbark on a football journey!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="flappyplane"></a>
+            <a href="./gams/flappyplane/index.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="flappyplane"
+                    width="100" style="border: 3px solid red;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/flappyplane/index.html">Flappy Plane</a></span>
+            <p1>&nbsp;is a clone of Flappy Bird but with a interesting twist...</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="gunmayhem2"></a>
+            <a href="./gams/flash/gunmayhem2.html">&nbsp;&nbsp;<img src="./comingsoon.png" alt="gunmayhem2" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/flash/gunmayhem2.html">Gun Mayhem 2</a></span>
+            <p1>&nbsp;is a ultimate battle game! Fire and shoot until you can't no more!</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="minesweeper"></a>
+            <a href="https://agentn86.github.io/js-minesweeper">&nbsp;&nbsp;<img src="./comingsoon.png"
+                    alt="minesweeper" width="100" style="border: 3px solid white;"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;"
+                    href="https://agentn86.github.io/js-minesweeper">Minesweeper</a></span>
+            <p1>&nbsp;<i>im too bothered to write a description right now- its minesweeper, its all you need to know</i>
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="minesweeper"></a>
+            <a
+                href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig">&nbsp;&nbsp;<img
+                    src="./comingsoon.png" alt="minesweeper" width="100" style="border: 3px solid white;"></a><span
+                class="title">&nbsp;&nbsp;<a style="color: white; cursor: pointer;"
+                    href="https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig">PolyTrack</a></span>
+            <p1>&nbsp;<i>im too bothered to write a description right now- its polytrack, its all you need to know</i>
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="nowgg"></a>
+            <a href="https://agents-nowgg.glitch.me">&nbsp;&nbsp;<img src="./comingsoon.png" alt="nowgg" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="https://agents-nowgg.glitch.me">now.gg
+                    unblckr</a></span>
+            <p1>&nbsp;<i>soon going to be transfered to agents tools, so use it here on agents gams while you can</i>
+            </p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="driftboss"></a>
+            <a href="./gams/driftboss">&nbsp;&nbsp;<img src="./thumbs/driftboss.png" alt="driftboss" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/driftboss">Drift Boss</a></span>
+            <p1>&nbsp;How long can you last driving your car on a wacky road?</p1>
+        </div>
+        <br>
+        <div style="display: flex; align-items: top;">
+            <a name="eggycar"></a>
+            <a href="./gams/eggycar">&nbsp;&nbsp;<img src="./thumbs/eggycar.png" alt="eggycar" width="100"
+                    style="border: 3px solid white;"></a><span class="title">&nbsp;&nbsp;<a
+                    style="color: white; cursor: pointer;" href="./gams/eggycar">Eggy Car</a></span>
+            <p1>&nbsp;Keep your egg in your car without dropping!</p1>
+        </div>-->
+    </div>
+    <center>
+        <footer style="color: red;"><b>DISCLAIMER:</b> The creator of this website is not responsible for any punishment
+            given to a user while on "agents gams".</footer>
+    </center>
     <!-- Scripts -->
     <script src="scripts/gamHTML.js"></script>
     <script src="scripts/redirect.js"></script>
     <script src="scripts/topbar.js"></script>
     <script src="scripts/randomgam.js"></script>
 </body>
+
 </html>
