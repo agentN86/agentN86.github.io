@@ -14,4 +14,4 @@ var template = `
 </div>
 `
 
-document.getElementById('gamList').append(template)
+document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
