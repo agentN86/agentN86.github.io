@@ -71,5 +71,9 @@ createItem("soccerlegends", "Soccer Legends", "https://images-opensocial.googleu
 createItem("hellokittyadventure", "Hello Kitty Adventure", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://s3.amazonaws.com/production-assetsbucket-8ljvyr1xczmb/8c491f21-7353-4f1f-b2a0-9544824c4d28%2Fhello_kitty_adventure.xml&container=ig", "./thumbs/hellokittyadventure.png", "white", "allows you to inbark in a new adventure in the Hello Kitty universe.")
 createItem("retrobowl", "Retro Bowl", "./gams/retrobowl/index.html", "./thumbs/retrobowl.avif", "blue", "allows players to enbark on a football journey!")
 createItem("flappyplane", "Flappy Plane", "./gams/flappyplane/index.html", "./comingsoon.png", "red", "is a clone of Flappy Bird but with a interesting twist...")
-
-//createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
+createItem("gunmayhem2", "Gun Mayhem 2", "./gams/flash/gunmayhem2.html", "./comingsoon.png", "white", "is a ultimate battle game! Fire and shoot until you can't no more!")
+createItem("minesweeper", "Minesweeper", "https://agentn86.github.io/js-minesweeper/", "./comingsoon.png", "white", "-- a challenging game where you must figure out the mines before they explode you!")
+createItem("polytrack", "Polytrack", "https://images-opensocial.googleusercontent.com/gadgets/ifr?url=https://cdn.jsdelivr.net/gh/wergboy/NLP@3cd7c854d047f364125194f75adeaa75aecf7985/pt/pt.xml&container=ig", "./thumbs/polytrack.png", "white", "is a racing game, runs well on basically anything, and is super fun! (Even your own custom editor..)")
+createItem("nowgg", "now.gg unblckr", "https://agents-nowgg.glitch.me/", "./comingsoon.png", "white", "*THIS WILL SOON BE MOVED TO AGENTS TOOLS*")
+createItem("driftboss", "Drift Boss", "./gams/driftboss", "./thumbs/driftboss.png", "white", "How long can you last driving your car on a wacky road?")
+createItem("eggycar", "Eggy Car", "./gams/eggycar", "./thumbs/eggycar.png", "white", "Keep your egg in your car without dropping!")
