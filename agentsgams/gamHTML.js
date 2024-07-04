@@ -10,16 +10,6 @@ function createItem(game, formatted, link, image, color, description) {
     document.getElementById('gamList').innerHTML = document.getElementById('gamList').innerHTML + template
 }
 
-
-const queryString = window.location.href
-const urlParams = new URLSearchParams(queryString)
-const page = urlParams.get('p')
-if (page == null) {
-    page = "1"
-}
-alert(page)
-
-
 createItem("epicbossbattle", "Epic Boss Battle", "https://agentn86.github.io/epicbossbattle/v1.3.3/", "https://agentn86.github.io/epicbossbattle/v1.3.3/loading.png", "pink", "is a tough, rage gam where you have to avoid and end a spaceship without dying in the process! Use the retry button to restart the game when needed.")
 createItem("smnake", "SMnake", "https://taco-eating-truck.glitch.me/index.html", "./comingsoon.png", "pink", "is a simple gam where you will forever collect meat with no objective! Passes time away... Use the controls on the top right to play.")
 createItem("coincollector", "Coin Collector", "https://coincollecor.glitch.me/index.html", "./comingsoon.png", "pink", "is a simple gam where you will have to collect as much money as you can. Use the controls on the bottom to play.")
