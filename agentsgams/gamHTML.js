@@ -14,7 +14,7 @@ function createItem(game, formatted, link, image, color, description) {
 const queryString = window.location.href
 const urlParams = new URLSearchParams(queryString)
 const page = urlParams.get('p')
-if (page == "") {
+if (page == null) {
     page = "1"
 }
 alert(page)
