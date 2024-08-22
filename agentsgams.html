@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <meta http-equiv="refresh" content="3; URL=https://agentn86.github.io/agentgam?migrate=true" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirect - agents gams</title>
+    <style>
+      body {
+        background-color: black;  
+      }
+      
+      h1 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      width: 100%;
+    }
+    
+    h2 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 68%;
+      font-size: 1em;
+      width: 100%;
+      color: yellow;
+    }
+    
+    h3 {
+      left: 0;
+      line-height: 200px;
+      margin-top: -100px;
+      position: absolute;
+      text-align: center;
+      top: 55%;
+      width: 100%;
+      font-size: 1em;
+      font-weight: normal;
+    }
+    
+    .redirect {
+  animation: MoveUpDown 5s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: 60%;
+  }
+  50% {
+    top: 40%;
+  }
+}
+    </style>
+    <script>
+      var seconds = 3
+    
+      function step() {
+        seconds -= 1
+        
+        document.getElementById('seconds').innerText = seconds
+      }
+    </script>
+  </head>
+  <body onload="setInterval(step, 1000)">
+    <h1 style="color: white;" id="redirect"><i>Redirecting to the NEW agents gams...</i></h1>
+    <h2 style="color: white;">being redirected in <span id="seconds">7</span> second(s)</h2>
+  </body>
+</html>
